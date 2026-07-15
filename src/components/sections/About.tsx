@@ -5,7 +5,7 @@ import { ShieldCheck, Award, Zap } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white relative">
+    <section id="about" className="py-24 bg-background relative border-t border-white/5">
       <div className="container mx-auto px-4">
         
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -15,18 +15,18 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="md:col-span-7 lg:col-span-8 bg-white/50 backdrop-blur-xl border border-primary/10 p-10 md:p-12 rounded-3xl shadow-sm"
+            className="md:col-span-7 lg:col-span-8 bg-card/60 backdrop-blur-xl border border-border p-10 md:p-12 rounded-3xl shadow-sm"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-semibold mb-6">
               <Zap className="w-4 h-4" /> Established 1986
             </div>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold tracking-tight text-primary mb-6">
+            <h2 className="font-heading text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6">
               Legacy of Excellence
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-medium">
               For over three decades, Maskavia Sdn Bhd has been at the forefront of digital transformation. We specialize in providing comprehensive, high-end corporate solutions designed to streamline operations and elevate user experiences.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed font-medium">
               We are recognized for our continuous innovation and commitment to delivering world-class technology across Healthcare, Retail, Public, and Finance sectors.
             </p>
           </motion.div>
@@ -39,13 +39,13 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-gray-50/80 backdrop-blur-lg border border-primary/10 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all cursor-pointer"
+              className="bg-card/60 backdrop-blur-lg border border-border p-8 rounded-3xl shadow-sm hover:shadow-md transition-all cursor-default group"
             >
-              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-5 text-accent border border-gray-100">
+              <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-5 text-primary border border-border group-hover:scale-110 transition-transform">
                 <Award className="w-6 h-6" />
               </div>
-              <h3 className="font-heading font-semibold text-xl mb-2 text-gray-900">MSC Status</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Recognized by the Malaysian Government for world-class technology development.</p>
+              <h3 className="font-heading font-semibold text-xl mb-2 text-foreground">MSC Status</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed font-medium">Recognized by the Malaysian Government for world-class technology development.</p>
             </motion.div>
             
             <motion.div 
@@ -54,13 +54,14 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-primary/95 backdrop-blur-lg border border-white/10 p-8 rounded-3xl shadow-[0_0_20px_rgba(30,58,138,0.2)] hover:shadow-[0_0_30px_rgba(30,58,138,0.4)] transition-all cursor-pointer text-white"
+              className="bg-primary/5 backdrop-blur-lg border border-primary/20 p-8 rounded-3xl shadow-sm hover:shadow-md transition-all cursor-default text-foreground relative overflow-hidden group"
             >
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-5 border border-white/10">
-                <ShieldCheck className="w-6 h-6 text-accent" />
+              <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+              <div className="w-12 h-12 bg-background rounded-xl flex items-center justify-center mb-5 border border-border relative z-10 text-primary group-hover:scale-110 transition-transform">
+                <ShieldCheck className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-heading font-semibold text-xl mb-2">Trusted Partner</h3>
-              <p className="text-blue-100 text-sm leading-relaxed">Decades of proven reliability across diverse enterprise industries.</p>
+              <h3 className="font-heading font-semibold text-xl mb-2 relative z-10 text-foreground">Trusted Partner</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed relative z-10 font-medium">Decades of proven reliability across diverse enterprise industries.</p>
             </motion.div>
           </div>
         </div>

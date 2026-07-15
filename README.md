@@ -1,6 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+</div>
 
-## Getting Started
+<h1 align="center">Maskavia Sdn Bhd - Enterprise OS</h1>
+
+<p align="center">
+  <strong>A Next-Gen Enterprise Operating System featuring a highly premium, glassmorphic UI, glowing components, and stunning interactive layouts.</strong>
+</p>
+
+<br />
+
+## 🌟 Overview
+
+Maskavia is an ultra-premium Next.js web application designed to deliver **Flawless Experiences** to global enterprises. It features a cutting-edge aesthetic with deep dark modes, vibrant glowing accents, and meticulously crafted interactive components.
+
+The platform provides solutions for:
+- **Smart Customer Journey Management (CJM)**
+- **Digital Signage & Wayfinding**
+- **Virtual Queuing & Appointment Booking**
+- **Business Intelligence & Security**
+
+## ✨ Key Features
+
+- **Ultra-Premium UI:** A design system focused on maximum wow-factor. Features deep, rich colors, Apple/Vercel-inspired typography, and highly polished layouts.
+- **Glassmorphic Dropdowns:** Bento-style mega menus with backdrop blurring and floating shadows that look stunning over any background.
+- **Glowing Interactive Elements:** Custom `.btn-premium-glow` utility providing breathtaking hover effects. 
+- **Dark Mode Hero Sections:** A striking dark mode split-layout with technical SaaS aesthetics.
+- **Fully Responsive:** Seamlessly scales from enterprise desktop monitors to mobile devices.
+
+## 🚀 Getting Started
 
 First, run the development server:
 
@@ -16,21 +47,23 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** [Next.js 14/15](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animation:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
 
-## Learn More
+## 🎨 Design System & Customization
 
-To learn more about Next.js, take a look at the following resources:
+The aesthetic is largely driven by custom utility classes in `src/app/globals.css`. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Key components include:
+- `.btn-premium-glow`: A global class providing an intense, blurred gradient shadow and smooth hover transitions.
+- **Glassmorphism (`backdrop-blur-3xl`)**: Used extensively on navigation headers and floating cards to create depth.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+<div align="center">
+  <sub>Built with ❤️ for Maskavia Sdn Bhd.</sub>
+</div>
